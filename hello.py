@@ -7,6 +7,8 @@ import os, sys, inspect
 from flask import Flask
 from telapi import rest
 
+print 'hello'
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -15,5 +17,5 @@ def hello():
 
 
 
-# if __name__ == '__main__':
-#     app.run()
+if __name__ == '__main__':
+    app.run()
