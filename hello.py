@@ -7,7 +7,6 @@ import os, sys, inspect
 from flask import Flask
 from telapi import rest
 
-print 'hello'
 
 app = Flask(__name__)
 
