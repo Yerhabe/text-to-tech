@@ -12,7 +12,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return 'This shud hopefully work!!!!!'
+    return 'YOOO!!!!'
 
 
 
