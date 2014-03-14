@@ -14,9 +14,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
 	user = {'name': 'Yedid'}
-    return render_template('test_template.html',
-    	title = 'Home',
-    	user = user)
+    return render_template('test_template.html', title = 'Home', user = user)
 
 @app.route('/sms')
 def sms():
