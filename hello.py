@@ -12,7 +12,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return 'YOOO!!!!'
+    return render_template('tech_text.html')
 
 @app.route('/sms')
 def sms():

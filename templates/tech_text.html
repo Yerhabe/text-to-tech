@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="//www.telapi.com/static/sdk.min.js"></script>
+</head>
+<body>
+    <button>Place Call</button>
+ 
+    <script type="text/javascript">
+ 
+        var button = document.getElementsByTagName('button')[0];
+ 
+        window.onload=function(){
+            var telapi_client = new TelAPI.Client({
+                token: 'TOKEN',
+                password: 'PASSWORD',
+            });
+ 
+            telapi_client.connect();
+ 
+            button.onclick = function() {
+                telapi_client.call();
+            }
+        }
+ 
+    </script>
+</body>
+</html>
