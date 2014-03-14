@@ -14,9 +14,9 @@ app = Flask(__name__)
 def hello():
     return 'YOOO!!!!'
 
-@app.route('/sms')
-def sms():
-	return 'sms'
+@app.route('/sms/<message>')
+def sms(message):
+	return 'sms: %' % message
 
 
 if __name__ == '__main__':
