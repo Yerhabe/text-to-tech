@@ -13,7 +13,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return render_template('tech_text.html')
+	user = {'name': 'Yedid'}
+    return render_template('test_template.html',
+    	title = 'Home',
+    	user = user)
 
 @app.route('/sms')
 def sms():
