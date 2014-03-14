@@ -5,6 +5,7 @@ import os, sys, inspect
 # 	sys.path.insert(0, cmd_subfolder)
 
 from flask import Flask
+from flask import render_template
 from telapi import rest
 
 
