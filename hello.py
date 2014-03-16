@@ -24,7 +24,7 @@ def sms():
 	to_number = request.args.get('From', None)
 	body = "body: " + sms_body 
  
-	account.sms_messages.create(from_number = '(747) 777-1015', to_number = '(732) 966-2819', body = 'success')
+	account.sms_messages.create(from_number = from_number, to_number = to_number, body = body)
  
 	return "SMS Received"
 
