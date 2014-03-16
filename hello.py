@@ -24,7 +24,10 @@ def sms():
 	to_number = request.args.get('From', None)
 	body = "body: " + sms_body 
  
-	account.sms_messages.create(to_number = "732-966-2819", from_number = "917-723-8337", body = "success")
+	# account.sms_messages.create(to_number = "732-966-2819", from_number = "917-723-8337", body = "success")
+
+	voice_url   = 'http://db.tt/YtLJgpa8'
+	account.calls.create(from_number="+19177238337", to_number="+17329662819", url=voice_url)
  
 	return "SMS Received"
 
