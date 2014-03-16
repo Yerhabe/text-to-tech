@@ -1,4 +1,6 @@
-from flask import Flask, request, render_template
+from flask import Flask
+from flask import request
+from flask import render_template
 from telapi import rest
 
 
@@ -9,7 +11,7 @@ def hello():
 	user = { 'name': 'Yedid' }
 	return render_template('test_template.html', title = 'Home', user = user)
 
-@app.route('/sms')
+@app.route('/sms', methods = ['GET'])
 def sms():
 	sms_body = request.args.get('Body', None)
 	
